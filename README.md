@@ -26,20 +26,19 @@ install.packages("tidyr")
 4. Find common words by creating a data frame of word frequencies
 ``` 
 [1] "abil"         "across"       "action"       "actor"        "algorithm"    "also"         "alway"        "amp"         
-  [9] "analysi"      "analysis"     "analyt"       "analytics"    "analyz"       "approach"     "articl"       "assess"      
- [17] "author"       "averag"       "base"         "best"         "better"       "build"        "call"         "can"         
- [25] "chang"        "class"        "clear"        "cluster"      "cognit"       "collect"      "combin"       "compar"      
- [33] "comput"       "concept"      "connect"      "construct"    "correl"       "cours"        "creat"        "data"        
- [41] "dataset"      "decis"        "defin"        "describ"      "design"       "develop"      "differ"       "difficult"   
- [49] "discoveri"    "edm"          "educ"         "education"    "effect"       "error"        "ethic"        "evalu"       
+[9] "analysi"      "analysis"     "analyt"       "analytics"    "analyz"       "approach"     "articl"       "assess"      
+[17] "author"       "averag"       "base"         "best"         "better"       "build"        "call"         "can"         
+[25] "chang"        "class"        "clear"        "cluster"      "cognit"       "collect"      "combin"       "compar"      
+[33] "comput"       "concept"      "connect"      "construct"    "correl"       "cours"        "creat"        "data"        
+[41] "dataset"      "decis"        "defin"        "describ"      "design"       "develop"      "differ"       "difficult"   
+[49] "discoveri"    "edm"          "educ"         "education"    "effect"       "error"        "ethic"        "evalu"       
  ```
 5. Generate a word cloud 
   * scale: controls the size of the words (font)
   * max.words: indicates the maximum number of words to be plotted (if you omit this R will try to squeeze every unique word into the diagram!)
   * rot.per: indicates the porportion words with 90 degree rotation (vertical text)
   * random.colors: chooses colors randomly from the colors
-![wordcloud](https://user-images.githubusercontent.com/46146748/63191023-8a716e00-c035-11e9-8b3e-d973acc4712e.png)
-
+ <img src="https://user-images.githubusercontent.com/46146748/63191023-8a716e00-c035-11e9-8b3e-d973acc4712e.png" width="600">
 6. Merge with week list to have a variable representing weeks for each entry.
 7. Create a Term Document Matrix and repeat step 5.
 
@@ -47,8 +46,7 @@ install.packages("tidyr")
 1. Match words in corpus to lexicons of positive and negative words
 2. Generate an overall pos-neg score for each matched line between each word and the two lexicons
 3. Geneate a visualization of the sum of the sentiment score over weeks with ggplot
-![Sentiment Score over weeks](https://user-images.githubusercontent.com/46146748/63191455-8265fe00-c036-11e9-82a8-2196c1e89590.png)
-
+<img src="https://user-images.githubusercontent.com/46146748/63191455-8265fe00-c036-11e9-82a8-2196c1e89590.png" width="600">
 
 ### LDA Topic Modelling
 1. Term Frequency Inverse Document Frequency
@@ -63,8 +61,7 @@ Topic 1   Topic 2   Topic 3   Topic 4   Topic 5
 6. Generate a *single* visualization showing: 
 - Sentiment for each week and 
 - One important topic for that week
-
-![Total Sentiment Score and Important Topics over Weeks](https://user-images.githubusercontent.com/46146748/63193248-fbffeb00-c03a-11e9-980e-cdf7000e0df4.png)
+<img src="https://user-images.githubusercontent.com/46146748/63193248-fbffeb00-c03a-11e9-980e-cdf7000e0df4.png" width="600">
 
 ## Background
 The use of natural language processing has exploded over the last decade. Appilcations that require machines to understand natural human speech patterns are abundant and substantial improvements in these systems has increased their utility. 
@@ -82,16 +79,17 @@ The algorithm assesses the followings:
 
 
 ## Definitions and concepts
- * Supervised machine learning: each item in the training data (typically a vector) is labeled with a desired output value (also called the supervisory signal). 
+1. Supervised machine learning: each item in the training data (typically a vector) is labeled with a desired output value (also called the supervisory signal). 
     * Classification come under supervised learning
 
- * Unsupervised machine learning: used to draw inferences from datasets consisting of input data without labeled responses. 
+2. Unsupervised machine learning: used to draw inferences from datasets consisting of input data without labeled responses. 
     * Cluster analysis, which is used for exploratory data analysis to find hidden patterns or grouping in data.
 
- * Overfitting:  is a modeling error which occurs when a function is too closely fit to a limited set of data points, but make poor predictions for new, previously unseen cases. This is because it may learn the random noise in the training data rather than only its essential, desired features. 
+3. Overfitting:  is a modeling error which occurs when a function is too closely fit to a limited set of data points, but make poor predictions for new, previously unseen cases. This is because it may learn the random noise in the training data rather than only its essential, desired features. 
 
- * Cross-validation: technique used to minimize overfitting risks. It partitions the example data randomly into training and test sets to internally validate the model's predictions. This process of data partitioning, training, and validation is repeated over several rounds, and the validation results are then averaged across rounds.
-    * *K-fold cross validation* is a resampling procedure sued to validate machine learning models on a limited data sample. K refers to the number of groups that a given data sample is to be split into.
+4. Cross-validation: technique used to minimize overfitting risks. It partitions the example data randomly into training and test sets to internally validate the model's predictions. This process of data partitioning, training, and validation is repeated over several rounds, and the validation results are then averaged across rounds.
+    * *K-fold cross validation* is a resampling procedure used to validate machine learning models on a limited data sample. K refers to the number of groups that a given data sample is to be split into.
+    
    **Procedure**: 
       1. shuffle the dataset randomly 
       2. split the dataset into k groups 
@@ -115,9 +113,6 @@ The algorithm assesses the followings:
 [Raval, S. (2016). Sentiment Analysis in 4 Minutes.](https://www.youtube.com/watch?v=AJVP96tAWxw)
 
 [Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)
-
-~~[Jurafsky, D. & Manning, C. (2016). What is Sentiment Analysis? Stanford: Palo Alto, CA](https://www.youtube.com/watch?v=sxPBv4Skj98)
-[Knispelis, A. (2016). LDA Topic Models.](https://www.youtube.com/watch?v=3mHy4OSyRf0)~~ 
 
 
 ## Author
