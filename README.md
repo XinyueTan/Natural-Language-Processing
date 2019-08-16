@@ -39,6 +39,7 @@ install.packages("tidyr")
   * rot.per: indicates the porportion words with 90 degree rotation (vertical text)
   * random.colors: chooses colors randomly from the colors
  <img src="https://user-images.githubusercontent.com/46146748/63191023-8a716e00-c035-11e9-8b3e-d973acc4712e.png" width="600">
+ 
 6. Merge with week list to have a variable representing weeks for each entry.
 7. Create a Term Document Matrix and repeat step 5.
 
@@ -46,7 +47,7 @@ install.packages("tidyr")
 1. Match words in corpus to lexicons of **positive and negative words**
 2. Generate an **overall pos-neg score** for each matched line between each word and the two lexicons
 3. Geneate a visualization of the sum of the sentiment score over weeks with ggplot
-<img src="https://user-images.githubusercontent.com/46146748/63191455-8265fe00-c036-11e9-82a8-2196c1e89590.png" width="600">
+<img src="https://user-images.githubusercontent.com/46146748/63191455-8265fe00-c036-11e9-82a8-2196c1e89590.png" width="500">
 
 ### LDA Topic Modelling
 1. Term Frequency Inverse Document Frequency
@@ -61,7 +62,7 @@ Topic 1   Topic 2   Topic 3   Topic 4   Topic 5
 6. Generate a *single* visualization showing: 
 - Sentiment for each week and 
 - One important topic for that week
-<img src="https://user-images.githubusercontent.com/46146748/63193248-fbffeb00-c03a-11e9-980e-cdf7000e0df4.png" width="600">
+<img src="https://user-images.githubusercontent.com/46146748/63193248-fbffeb00-c03a-11e9-980e-cdf7000e0df4.png" width="500">
 
 ## Background
 The use of natural language processing has exploded over the last decade. Appilcations that require machines to understand natural human speech patterns are abundant and substantial improvements in these systems has increased their utility. 
