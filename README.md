@@ -18,7 +18,7 @@ install.packages("tidyr")
 
 1. Import all document files and then list of weeks file
 2. Clean the html tags from the text
-3. Process text using tm package with alternative processing.
+3. Process text using **tm package** with alternative processing.
   * Convert the data frame to the corpus format used in tm package
   * Remove spaces, pre-defined stop words ('the', 'a', etc...), numbers and punctuation
   * Convert upper case to lower case, words to stems for analysis
@@ -33,7 +33,7 @@ install.packages("tidyr")
 [41] "dataset"      "decis"        "defin"        "describ"      "design"       "develop"      "differ"       "difficult"   
 [49] "discoveri"    "edm"          "educ"         "education"    "effect"       "error"        "ethic"        "evalu"       
  ```
-5. Generate a word cloud 
+5. Generate a **word cloud** 
   * scale: controls the size of the words (font)
   * max.words: indicates the maximum number of words to be plotted (if you omit this R will try to squeeze every unique word into the diagram!)
   * rot.per: indicates the porportion words with 90 degree rotation (vertical text)
@@ -43,8 +43,8 @@ install.packages("tidyr")
 7. Create a Term Document Matrix and repeat step 5.
 
 ### Sentiment Analysis 
-1. Match words in corpus to lexicons of positive and negative words
-2. Generate an overall pos-neg score for each matched line between each word and the two lexicons
+1. Match words in corpus to lexicons of **positive and negative words**
+2. Generate an **overall pos-neg score** for each matched line between each word and the two lexicons
 3. Geneate a visualization of the sum of the sentiment score over weeks with ggplot
 <img src="https://user-images.githubusercontent.com/46146748/63191455-8265fe00-c036-11e9-82a8-2196c1e89590.png" width="600">
 
@@ -79,16 +79,16 @@ The algorithm assesses the followings:
 
 
 ## Definitions and concepts
-1. Supervised machine learning: each item in the training data (typically a vector) is labeled with a desired output value (also called the supervisory signal). 
+1. **Supervised machine learning**: each item in the training data (typically a vector) is labeled with a desired output value (also called the supervisory signal). 
     * Classification come under supervised learning
 
-2. Unsupervised machine learning: used to draw inferences from datasets consisting of input data without labeled responses. 
+2. **Unsupervised machine learning**: used to draw inferences from datasets consisting of input data without labeled responses. 
     * Cluster analysis, which is used for exploratory data analysis to find hidden patterns or grouping in data.
 
-3. Overfitting:  is a modeling error which occurs when a function is too closely fit to a limited set of data points, but make poor predictions for new, previously unseen cases. This is because it may learn the random noise in the training data rather than only its essential, desired features. 
+3. **Overfitting**:  is a modeling error which occurs when a function is too closely fit to a limited set of data points, but make poor predictions for new, previously unseen cases. This is because it may learn the random noise in the training data rather than only its essential, desired features. 
 
-4. Cross-validation: technique used to minimize overfitting risks. It partitions the example data randomly into training and test sets to internally validate the model's predictions. This process of data partitioning, training, and validation is repeated over several rounds, and the validation results are then averaged across rounds.
-    * *K-fold cross validation* is a resampling procedure used to validate machine learning models on a limited data sample. K refers to the number of groups that a given data sample is to be split into.
+4. **Cross-validation**: technique used to minimize overfitting risks. It partitions the example data randomly into training and test sets to internally validate the model's predictions. This process of data partitioning, training, and validation is repeated over several rounds, and the validation results are then averaged across rounds.
+    * **K-fold cross validation** is a resampling procedure used to validate machine learning models on a limited data sample. K refers to the number of groups that a given data sample is to be split into.
     
    **Procedure**: 
       1. shuffle the dataset randomly 
